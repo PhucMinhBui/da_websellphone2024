@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/product.css">
+    <title>Document</title>
+</head>
+<body>
+     <!------------------ SIDEBAR ------------>
+     <section id="sidebar">
+        <a href="index.html" class="brand">
+            <i class='bx bxs-home-alt-2'></i>
+            <span class="text">AdminHub</span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="dashboard-add-product.html">
+                    <i class='bx bx-add-to-queue' ></i>
+                    <span class="text">Thêm Sản Phẩm</span>
+                </a>
+            </li>
+            <li>
+                <a href="dashboard-add-caterogy.html">
+                    <i class='bx bx-add-to-queue' ></i>
+                    <span class="text">Thêm Danh Mục</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#">
+                    <i class='bx bx-cart-add' ></i>
+                    <span class="text">Sản Phẩm</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-link' ></i>
+                    <span class="text">Danh Mục</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-purchase-tag' ></i>
+                    <span class="text">Blogs</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-shopping-bag' ></i>
+                    <span class="text">Đơn Hàng</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="text">Cài Đặt</span>
+                </a>
+            </li>
+            <li>
+                <a href="logout.html" class="logout">
+                    <i class='bx bx-log-out' ></i>
+                    <span class="text">Đăng Xuất</span>
+                </a>
+            </li>
+        </ul>
+        
+
+    </section>
+    <!-- ---------------SIDEBAR -------------->
+
+    <!-- --------------CONTENT ---------------->
+
+    <section id="content">
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="" class="nav-link">Caterogy</a> 
+            <form action="">
+                <div class="form-input">
+                    <input type="search" placeholder="Tìm kiếm">
+                    <button type="submit" class="search-btn"><i class='bx bx-search-alt-2' ></i></button>
+                </div>
+            </form>
+            <a href="#" class="notification">
+                <i class='bx bx-bell' ></i>
+                <span class="num">8</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="./img/z5344662849579_0247630054cce5eb4a10885dba4a65ce.jpg" alt="">
+            </a>
+        </nav>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Xóa sản phẩm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./img/iPhone_15_Pro_Max.jpg" alt="IPhone 15 Pro Max"></td>
+                    <td>IPhone 15 Pro Max</td>
+                    <td>34.990.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Iphone_14_Pro_Max.jpg" alt="IPhone 14 Pro Max"></td>
+                    <td>IPhone 14 Pro Max</td>
+                    <td>26.690.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/IPhone_13.jpg" alt="IPhone 13"></td>
+                    <td>IPhone 13</td>
+                    <td>13.690.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/IPhone_12.jpg" alt="IPhone 12"></td>
+                    <td>IPhone 12</td>
+                    <td>11.590.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Samsung_Galaxy_S23_Ultra_5G.jpg" alt="SamSung Galaxy S23 Ultra 5G"></td>
+                    <td>SamSung Galaxy S23 Ultra 5G</td>
+                    <td>34.999.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/samsungGalaxy_M34_5G_8GB_128GB.jpg" alt="SamSung Galaxy M34 5G"></td>
+                    <td>SamSung Galaxy M34 5G</td>
+                    <td>5.790.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Samsung_Galaxy_A55_5G.jpg" alt="SamSung Galaxy A55 5G"></td>
+                    <td>SamSung Galaxy A55 5G</td>
+                    <td>11.490.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Samsung_Galaxy_M54_5G.jpg" alt="SamSung Galaxy M54 5G"></td>
+                    <td>SamSung Galaxy M54 5G</td>
+                    <td>8.990.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Xiaomi_14_Ultra.jpg" alt="Xiaomi 14 Ultra"></td>
+                    <td>Xiaomi 14 Ultra</td>
+                    <td>32.990.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Xiaomi_13T_pro_5G.jpg" alt="Xiaomi 13T Pro 5G"></td>
+                    <td>Xiaomi 13T Pro 5G</td>
+                    <td>13.790.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Xiaomi_14_5G.jpg" alt="Xiaomi 14 5G"></td>
+                    <td>Xiaomi 14 5G</td>
+                    <td>21.490.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/Xiaomi_Redmi_A3.jpg" alt="Xiaomi A3"></td>
+                    <td>Xiaomi A3</td>
+                    <td>2.455.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/vivo_Y36.jpg" alt="Vivo Y36"></td>
+                    <td>Vivo Y36</td>
+                    <td>5.040.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/vivo_V29e_5G_12GB.jpg" alt="Vivo V29e 5G 12GB"></td>
+                    <td>Vivo V29e 5G 12GB</td>
+                    <td>9.990.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/vivo_Y100.jpg" alt="Vivo Y100"></td>
+                    <td>Vivo Y100</td>
+                    <td>7.690.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/vivo_Y18.jpg" alt="Vivo Y18"></td>
+                    <td>Vivo Y18</td>
+                    <td>4.290.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/bluetooth1.jpg" alt="Tai nghe Bluetooth True Wireless Xiaomi Redmi Buds 5"></td>
+                    <td>Tai nghe Bluetooth True Wireless Xiaomi Redmi Buds 5</td>
+                    <td>990.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/bluetooth2.jpg" alt="Tai nghe Bluetooth True Wireless Baseus Bowei E13"></td>
+                    <td>Tai nghe Bluetooth True Wireless Baseus Bowei E13</td>
+                    <td>340.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/bluetooth3.jpg" alt="Tai nghe Bluetooth True Wireless AVA+ Go F25"></td>
+                    <td>Tai nghe Bluetooth True Wireless AVA+ Go F25</td>
+                    <td>230.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/bluetooth4.jpg" alt="Tai nghe Bluetooth Shok OPENRUN S803"></td>
+                    <td>Tai nghe Bluetooth Shok OPENRUN S803</td>
+                    <td>3.490.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/TaiNgheDay1.jpg" alt="Tai nghe Có Dây Apple MTJY3"></td>
+                    <td>Tai nghe Có Dây Apple MTJY3</td>
+                    <td>550.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/TaiNgheDay2.jpg" alt="Tai nghe Có Dây AVA+ LiveBass Y232"></td>
+                    <td>Tai nghe Có Dây AVA+ LiveBass Y232</td>
+                    <td>135.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/TaiNgheDay3.jpg" alt="Tai nghe có Dây SamSung IA500"></td>
+                    <td>Tai nghe có Dây SamSung IA500</td>
+                    <td>250.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/TaiNgheDay4.jpg" alt="Tai nghe có Dây JBL C200 SIU"></td>
+                    <td>Tai nghe có Dây JBL C200 SIU</td>
+                    <td>220.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/SacDuPhong1.jpg" alt="Baseus ioTa 220V/140W BPE14A"></td>
+                    <td>Baseus ioTa 220V/140W BPE14A</td>
+                    <td>3.995.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/SacDuPhong2.jpg" alt="AVA+ 12W JP299"></td>
+                    <td>AVA+ 12W JP299</td>
+                    <td>190.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/SacDuPhong3.jpg" alt="Anker MagGo 20W A1641"></td>
+                    <td>Anker MagGo 20W A1641</td>
+                    <td>1.050.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/SacDuPhong4.jpg" alt="Mazer Super Mini 22.5W V2"></td>
+                    <td>Mazer Super Mini 22.5W V2</td>
+                    <td>515.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/OpLung1.jpg" alt="Ốp lưng IPhone 15 Pro Nhựa cứng JM Bayer II"></td>
+                    <td>Ốp lưng IPhone 15 Pro Nhựa cứng JM Bayer II</td>
+                    <td>150.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/OpLung2.jpg" alt="Ốp Lưng IPhone 13 Nhựa cứng viền dẻo Jincase"></td>
+                    <td>Ốp Lưng IPhone 13 Nhựa cứng viền dẻo Jincase</td>
+                    <td>150.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/OpLung3.jpg" alt="Ốp Lưng Galasxy A55 Silicone SamSung"></td>
+                    <td>Ốp Lưng Galasxy A55 Silicone SamSung</td>
+                    <td>467.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+    
+                <tr>
+                    <td><img src="./img/OpLung4.jpg" alt="Ốp Lưng Xiaomi 12C Nhựa dẻo TPU"></td>
+                    <td>Ốp Lưng Xiaomi 12C Nhựa dẻo TPU</td>
+                    <td>50.000₫</td>
+                    <td><button>Xóa</button></td>
+                </tr>
+    
+                
+            </tbody>
+        </table>
+    </section>
+   
+    <script src="./script.js">
+    //delete
+    const buttons = document.querySelectorAll('button');
+
+    buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const row = button.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+        });
+    });
+    //nav bar
+    const menuBar =document.querySelector('#content nav .bx.bx-menu');
+    const sideBar=document.getElementById('sidebar');
+
+    menuBar.addEventListener('click',function(){
+    sideBar.classList.toggle('hide');
+    })
+    //button search
+    
+    </script>
+</main>
+</body>
+</html>

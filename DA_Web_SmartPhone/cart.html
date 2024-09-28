@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+              integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/style.css" rel="stylesheet">
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous">
+        </script>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Cart</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function()
+        {
+            $('#toggle').click(function(){
+                $('nav').slideToggle();
+            });
+        })
+    </script>
+
+    <div id="toggle">
+        <div id="logo-shop" ><a  href="index.html"><i class="fa-solid fa-shop"></i>ABC STORE</a></div>
+        <div style="color: white;"><i class="fa-solid fa-bars"></i></div>
+        <hr>
+    </div>
+    <nav>
+        <div class="container">
+             <ul id="main-menu">
+                 <li id="NameShop"><a href="index.html"><i class="fa-solid fa-shop"></i>ABC Shop</a></li>
+                 <li id="input-search"><input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i></li>
+                 <li class="item-li"><a href=""><button><i class="fa-solid fa-file"></i>Policy</button></a></li>
+                 <li class="item-li"><a href="cart.html"><button><i class="fa-solid fa-cart-shopping"></i>Cart</button></a></li>
+                 <li class="item-li"><a href="location.html"><button><i class="fa-solid fa-location-dot"></i>Location</button></a></li>
+                 <li class="item-li"><a href=""><button><i class="fa-solid fa-list"></i>PO</button></a></li>
+                 <li id="user-form" class="item-li"><a href="#"></a><button><i class="fa-solid fa-user"></i>User</button></li>
+                     <div class="user-form">
+                         <div class="user-form-content">
+                             <h2>
+                                 <i class="fa-solid fa-shop"></i>ABC Store
+                                 <span id="userclose"><i class="fa-solid fa-xmark"></i>Đóng</span>
+                             </h2>
+                             <form action="">     
+                                 <input type="text" class="input-content" placeholder="Email hoặc số điện thoại">
+                                 <input type="password" class="input-content" placeholder="Mật khẩu">
+                                 <div class="login-form">
+                                     <button class="login-btn">Đăng nhập</button>
+                                 </div>
+                                 <div class="question">
+                                     <a href="">Quên mật khẩu?</a>
+                                 </div>
+                                 <div class="register-form-btn">
+                                    <a href="register.html">Tạo tài khoản mới</a>
+                                 </div>
+                             </form>
+                         </div>
+                     </div>
+             </ul>
+        </div>
+     </nav>
+     
+     <div class="cart-form">
+        <div class="contaner">
+            <div class="cart-item">
+               <ul>
+                    <li><img src="img/Cart.png" alt=""></li>
+                    <li><h2>Chưa có sản phẩm trong giỏ hàng</h2></li>
+                    <li><p>Cùng mua sắm sản phẩm tại ABC Store nhé!</p></li>
+                    <li><a href="index.html"><button>Mua hàng</button></a></li>
+               </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

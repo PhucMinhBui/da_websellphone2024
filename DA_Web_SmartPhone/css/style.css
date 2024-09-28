@@ -1,0 +1,835 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(241, 240, 240);
+}
+#main-menu{
+    list-style: none;
+    display: flex;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/*------------------Nav-------------------*/
+nav{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 70;
+}
+#main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main-menu li{
+    margin-top: 10px;
+}
+#main-menu li a{
+    color: white;
+}
+#NameShop{
+    font-size: 20px;
+}
+.item-li{
+    font-size: 12px;
+}
+.item-li button{
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(70, 68, 68);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.item-li button i{
+    margin-right: 6px;
+}
+.item-li button:hover{
+    background-color: rgb(100, 97, 97);
+}
+#main-menu li:nth-child(2){
+    position: relative;
+}
+#input-search:nth-child(2) input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 6px;
+    outline: none;
+}
+#input-search:nth-child(2) i{
+    position: absolute;
+    font-size: 15px;
+    right: 12px;
+    color: #333;
+    line-height: 30px;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+    background:black;;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+#logo-shop{
+    text-align: center;
+}
+#logo-shop a{
+    color: white;
+
+}
+
+
+
+/*----------------------Location---------------*/
+.address-form{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+}
+.address-form-content{
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.address-form-content form{
+    height: 100%;
+    position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 350px;
+}
+.address-form-content h2{
+    font-size: 18px;
+    padding: 12px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.address-form-content h2 span{
+    margin-left: 100px;
+    cursor: pointer;
+}
+.address-form-content form p{
+    font-size: 15px;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.address-form-content form input, select{
+    height: 30px;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.address-form-content form  select option{
+    text-align: center;
+}
+.address-form-content form button
+{
+    margin-top: 20px;
+    margin-left: 30px;
+    height: 40px;
+    width: 80%;
+    background-color: #f97E0E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.address-form-content h2 span a{
+    color: black;
+    text-decoration: none;
+}
+.address-form-content h2 span a:hover{
+    color: red;
+}
+/*-------------Cart---------------*/
+.cart-form{
+   background-color: white;
+   padding: 200px 0;
+}
+.cart-item ul{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.cart-item ul li h2{
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.cart-item p{
+    margin-bottom: 10px;
+}
+.cart-item button{
+    margin-top: 5px;
+    height: 45px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+.cart-item ul li img{
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+
+
+/*------------------User------------*/
+.user-form{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    z-index: 999;
+    display: none;
+    
+}
+.user-form-content{
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.user-form-content form{
+    padding: 0 40px;
+    margin-left: -10px;
+}
+.user-form-content h2{
+    font-size: 18px;
+    padding: 12px 0;
+    border-bottom:1px solid #ddd;
+    position: relative;
+}
+.user-form-content h2 span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+}
+
+.user-form-content h2 i{
+    margin-right: 6px;
+}
+.user-form-content h2 span:hover{
+    color: red;
+}
+.user-form-content form input{
+    padding-left: 15px;
+}
+
+.user-form-content form input,.login-btn{
+    width: 340px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: block;
+    border: 0.2px solid black;
+}
+.login-btn{
+    background-color: #0866ff;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.question{
+    margin-top:10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.question a{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+}
+.register-form-btn a{
+    display: block;
+    width: 200px;
+    height: inherit;
+    border: none;
+    justify-content: center;
+    background-color:  #42b72a;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 60px;
+}
+
+
+
+/*-----------------------Register Form------------*/
+.register-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form .register-btn{
+    background-color: #42b72a;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border: none;
+    
+}
+
+
+.register-form{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    color: #333;
+}
+.register-form-content{
+    width: 400px;
+    height: 400px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+.register-title{
+    border-bottom: 0.01px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.register-title h2{
+    font-size: 18px;
+    padding: 5px 0;
+    position: relative;
+    margin-left: 40px;
+}
+.register-title a{
+    margin-left: 250px;
+    color: black;
+}
+.register-title a:hover{
+    color: red;
+}
+
+.register-title h2 span i{
+    padding-right: 4px;
+}
+.register-title p{
+    margin-left: 20px;
+    font-size: 14px;
+}
+.form-content{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.input-content{
+    height: 40px;
+    width: 80%;
+    padding-left: 20px;
+
+    border: none;
+    border-bottom: 1px solid black;
+} 
+.form-content button {
+    width: 100px;
+    height: 40px;   
+    background-color: #42b72a; 
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.gender-input{
+    width: 100%;
+    margin-left: 70px;
+}
+
+/*---------------Advertisement---------------*/
+.Advertisement{
+    padding: 80px 0;
+    height: 450px;
+}
+.Flyer-content{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    
+}
+.Flyer-content-left{
+    width: 65%;
+    background-color: blueviolet;
+}
+.Flyer-left-top{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.Flyer-left-bottom{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #ddd;
+    border-top: none;
+    height: 50px;
+}
+.Flyer-left-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Flyer-left-bottom li{
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    padding: 6px 0;
+    height: 100%;
+    line-height: 38px;
+    position: relative;
+    font-size: 12px;
+    color: white;
+}
+.Flyer-left-bottom li::before{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 1px;
+    background-color: #ddd;
+}
+.active{
+    border-top:4px solid rgb(255, 255, 0) ;
+}
+
+.Flyer-btn{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    justify-content: space-between;
+    width: 100%;
+}
+.Flyer-btn button{
+    width: 30px;
+    height: 50px;
+    font-size: 25px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.Flyer-content-right{
+    width: 35%;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: space-around;
+    background-color: rgb(154, 182, 182);
+    
+    
+}
+.Flyer-content-right li{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.Flyer-content-right li img{
+    margin-top: 20px;
+    height: 170px;
+    width: 350px;
+}
+.Flyer-left-top img{
+    position: absolute;
+}
+.Flyer-left-top a:nth-child(2) img{
+    transform: translateX(100%);
+}
+.Flyer-left-top a:nth-child(3) img{
+    transform: translateX(200%);
+}
+.Flyer-left-top a:nth-child(4) img{
+    transform: translateX(300%);
+}
+.Flyer-content-left-top{
+    position: relative;
+    overflow: hidden;
+}
+.Flyer-content-left-top:hover button{
+    opacity: 1;
+}
+/* --------------Menu-bar------------ */
+.menu-bar{
+    margin-top: 150px;
+}
+.menu-bar-content{
+    height: 60px;
+    margin-left: 10%;
+    
+}
+.menu-bar-content > ul{
+    height: 100%;
+    display: flex;
+}
+.menu-bar-content li{
+    margin: 10px;
+    margin-left: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    width: 300px;
+    position: relative;
+}
+.menu-bar-content > ul > li:first-child{
+    margin-right: 20%;
+}
+.menu-bar-content li:hover .submenu{
+    display: flex;
+}
+.menu-bar-content i{
+    margin-right: 6px;
+}
+
+.submenu{
+    position: absolute;
+    height: auto;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    z-index: 60;
+    display: none;
+}
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+}
+.submenu li{
+    font-size: 15px;
+    width: 150px;
+}
+.submenu a{
+    color:black
+}
+.submenu a:hover{
+    color: #0866ff;
+}
+
+/* -------------Silde Product Phone--------------- */
+.product-one-content{
+    
+    padding: 12px;
+    /* margin-top: 10px; */
+    background-color: #e83a45;
+}
+.product-one-content-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.product-one-content-title i{
+    margin-right: 5px;
+}
+.product-one-content-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+.product-one-item{
+    width: 19%;
+    background-color: #ddd;
+    padding: 30px 12px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-one-item:hover > img{
+    transform: translateY(-20px);
+}
+.product-one-item > img{
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+.product-one-text li{
+    margin-bottom: 6px ;
+    margin-left: 5px;
+}
+.product-one-text li:first-child i{
+    margin-right: 3px;
+}
+.product-one-text li:last-child i{
+    color: #FB6E2B;
+}
+.item-img-style{
+    width: 60%;
+    background-color:#DE1C05;
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: 20px;
+    align-items: center;
+    border-radius: 40px;
+}
+.item-img-style img{
+    height: 20px;
+    width: 20px;
+    float: left;
+    margin-right: 6px;
+}
+.item-img-style p{
+    color: #fff;
+    font-size: 15px;
+}
+.item-text-style{
+    padding-left: 10px;
+    width: 45%;
+    color: #f5f5f5;
+    background-color:#DE1C05; 
+    border-radius: 40px;
+}
+.item-price-style a{
+    text-decoration:line-through;
+    font-size: 12px;
+}
+/* -------------Silde Product Phu Kien--------------- */
+.slide-product-two{
+    margin-top: 30px;
+}
+.product-two-content{
+    background-color: white;
+    padding: 12px;
+    margin-top: 10px;
+}
+.product-two-content-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.product-two-content-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+.product-two-item{
+    width: 19%;
+    background-color: #ddd;
+    padding: 30px 12px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-two-item:hover > img{
+    transform: translateY(-20px);
+}
+.product-two-item > img{
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+.product-two-text li{
+    margin-bottom: 6px ;
+    margin-left: 5px;
+}
+.product-two-text li:nth-child(2){
+    font-size: 14px;
+}
+.product-two-text li:first-child i{
+    margin-right: 3px;
+}
+
+.product-two-text li:last-child i{
+    color: #FB6E2B;
+}
+/* -----Footer---------- */
+.footer-content{
+    background-color: rgba(24, 49, 83, 1);
+    color: #f5f5f5;
+    height: 150px;
+    display: block;
+    margin: auto;
+
+}
+.footer-icon{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-left: 25%;
+    cursor: pointer;
+}
+.footer-text{
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}.footer-text li{
+    margin-top: 10px;
+}
+.text-one a{
+    color: #f5f5f5;
+    
+}
+.text-one a:hover{
+    color: yellow;
+}
+
+/* -----------Responsive------------ */
+@media only screen and (max-width:700px){
+
+    #NameShop{
+        display: none;
+    }
+    #main-menu{
+        flex-direction: column;
+        background-color: black;
+        margin-top: 60px;
+    }
+    .item-li{
+        width: 100%;
+        align-items: center;
+    }
+    .item-li button{
+        background-color: black;
+        color: white;
+        width: 100%;
+        border: none;
+    }
+    #input-search{
+        width: 300px;
+    }
+    #toggle{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+    .Flyer-content{
+        display: block;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .Flyer-content-left{
+        width: 100%;
+    }
+    .Flyer-content-right{
+        display: none;
+    }
+    .Flyer-left-bottom li{
+        font-size: 10px;
+    }
+    .menu-bar{
+        margin-top: 100px;
+    }
+    .menu-bar-content{
+        height: 40px;
+        margin-left: 0px;
+    }
+    .menu-bar-content > ul > li{
+        font-size: 20px;
+    }
+    .submenu {
+        width: 140px;
+    }
+    .submenu ul li{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .product-one-content-items{
+        flex-wrap: wrap;
+    }
+    .product-one-content .product-one-item{
+        width: 50%;
+    }
+    .product-one-text li{
+        font-size: 12px;
+    }
+    .product-one-text li:first-child{
+        width: 80px;
+    }
+    .item-img-style p{
+        font-size: 12px;
+    }
+    .product-two-content-items{
+        flex-wrap: wrap;
+    }
+    .product-two-item{
+        width: 50%;;
+    }
+    .product-two-text li{
+        font-size: 12px;
+    }
+    .item-img-style{
+        width: 100px;
+    }
+    .product-two-text li:nth-child(2) {
+        font-size: 12px;
+    }
+    .footer-text{
+        font-size: 12px
+    }
+    .footer-content:last-child span{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/add-product.css" />
+    <title>Add Product</title>
+  </head>
+  <body>
+    <!------------------ SIDEBAR ------------>
+    <section id="sidebar">
+      <a href="backend.html" class="brand">
+        <i class="bx bxs-home-alt-2"></i>
+        <span class="text">AdminHub</span>
+      </a>
+      <ul class="side-menu top">
+        <li class="active">
+          <a href="dashboard.html">
+            <i class="bx bxs-dashboard"></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-add-to-queue"></i>
+            <span class="text">Thêm Sản Phẩm</span>
+          </a>
+        </li>
+        <li>
+          <a href="dashboard-add-caterogy.html">
+            <i class="bx bx-add-to-queue"></i>
+            <span class="text">Thêm Danh Mục</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="side-menu">
+        <li>
+          <a href="product.html">
+            <i class="bx bx-cart-add"></i>
+            <span class="text">Sản Phẩm</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-link"></i>
+            <span class="text">Danh Mục</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-purchase-tag"></i>
+            <span class="text">Blogs</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-shopping-bag"></i>
+            <span class="text">Đơn Hàng</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="text">Cài Đặt</span>
+          </a>
+        </li>
+        <li>
+          <a href="logout.html" class="logout">
+            <i class="bx bx-log-out"></i>
+            <span class="text">Đăng Xuất</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- ---------------SIDEBAR -------------->
+
+    <!-- --------------CONTENT ---------------->
+
+    <section id="content">
+      <nav>
+        <i class="bx bx-menu"></i>
+        <a href="" class="nav-link">Caterogy</a>
+        <form action="">
+          <div class="form-input">
+            <input type="search" placeholder="Tìm kiếm" />
+            <button type="submit" class="search-btn">
+              <i class="bx bx-search-alt-2"></i>
+            </button>
+          </div>
+        </form>
+        <a href="#" class="notification">
+          <i class="bx bx-bell"></i>
+          <span class="num">8</span>
+        </a>
+        <a href="#" class="profile">
+          <img
+            src="./img/z5344662849579_0247630054cce5eb4a10885dba4a65ce.jpg"
+            alt=""
+          />
+        </a>
+      </nav>
+      
+   
+    <!-- --------------CONTENT ---------------->
+    <div class="container">
+      <h1 id="abc">Thêm sản phẩm</h1>
+      <form action="./dashboard-add-product.html">
+        <div class="form-group">
+          <label for="tensp">Tên sản phẩm:</label>
+          <input type="text" id="tensp" name="tensp" placeholder="Nhập tên sản phẩm" required 
+       oninvalid="this.setCustomValidity('Vui lòng nhập tên sản phẩm')"
+       oninput="this.setCustomValidity('')">
+        </div>
+        <div class="form-group">
+          <label for="giaban">Giá bán:</label>
+          <input
+            type="number"
+            id="giaban"
+            name="giaban"
+            placeholder="Nhập giá bán"
+            required
+            oninvalid="setCustomValidity('Vui lòng nhập giá bán sản phẩm')"
+            oninput="setCustomValidity('')"
+          />
+        </div>
+        <div class="form-group">
+          <label for="giakm">Giá khuyến mãi:</label>
+          <input
+            type="number"
+            id="giakm"
+            name="giakm"
+            placeholder="Nhập giá khuyến mãi"
+            required
+            oninvalid="setCustomValidity('Vui lòng nhập giá bán sản phẩm')"
+            oninput="setCustomValidity('')"
+          />
+        </div>
+        <div class="form-group">
+          <label for="danhmuc">Danh mục sản phẩm:</label>
+          <select id="danhmuc" name="danhmuc">
+            <option value="form-group-phone">Điện thoại</option>
+            <option value="form-group-option">Phụ kiện</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="hinhanh">Hình ảnh:</label>
+          <input type="file" id="hinhanh" name="hinhanh" />
+        </div>
+        <div class="form-group">
+          <label for="mota">Mô tả sản phẩm:</label>
+          <textarea
+            id="mota"
+            name="mota"
+            rows="5"
+            placeholder="Nhập mô tả sản phẩm"
+          ></textarea>
+        </div>
+        <button type="submit">Lưu</button>
+      </form>
+    </div>
+     </section>
+    <script src="script.js"></script>
+  </body>
+</html>

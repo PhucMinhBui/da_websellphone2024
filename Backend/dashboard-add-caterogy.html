@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/add-category.css">
+    <title>Document</title>
+</head>
+<body>
+        <!------------------ SIDEBAR ------------>
+        <section id="sidebar">
+            <a href="index.html" class="brand">
+                <i class='bx bxs-home-alt-2'></i>
+                <span class="text">AdminHub</span>
+            </a>
+            <ul class="side-menu top">
+                <li class="active">
+                    <a href="dashboard.html">
+                        <i class='bx bxs-dashboard' ></i>
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-add-product.html">
+                        <i class='bx bx-add-to-queue' ></i>
+                        <span class="text">Thêm Sản Phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard-add-caterogy.html">
+                        <i class='bx bx-add-to-queue' ></i>
+                        <span class="text">Thêm Danh Mục</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="side-menu">
+                <li>
+                    <a href="product.html">
+                        <i class='bx bx-cart-add' ></i>
+                        <span class="text">Sản Phẩm</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-link' ></i>
+                        <span class="text">Danh Mục</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-purchase-tag' ></i>
+                        <span class="text">Blogs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-shopping-bag' ></i>
+                        <span class="text">Đơn Hàng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog' ></i>
+                        <span class="text">Cài Đặt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="logout.html" class="logout">
+                        <i class='bx bx-log-out' ></i>
+                        <span class="text">Đăng Xuất</span>
+                    </a>
+                </li>
+            </ul>
+            
+    
+        </section>
+        <!-- ---------------SIDEBAR -------------->
+    
+        <!-- --------------CONTENT ---------------->
+    
+        <section id="content">
+            <nav>
+                <i class='bx bx-menu'></i>
+                <a href="" class="nav-link">Caterogy</a> 
+                <form action="">
+                    <div class="form-input">
+                        <input type="search" placeholder="Tìm kiếm">
+                        <button type="submit" class="search-btn"><i class='bx bx-search-alt-2' ></i></button>
+                    </div>
+                </form>
+                <a href="#" class="notification">
+                    <i class='bx bx-bell' ></i>
+                    <span class="num">8</span>
+                </a>
+                <a href="#" class="profile">
+                    <img src="./img/z5344662849579_0247630054cce5eb4a10885dba4a65ce.jpg" alt="">
+                </a>
+               
+            
+            </nav>
+            
+            <main>
+                <h1>Thêm danh mục</h1>
+                <form id="form-add-category">
+                    <label for="category-name">Tên danh mục:</label>
+                    <input type="text" id="category-name" name="category-name" 
+                    required
+                    oninvalid="setCustomValidity('Vui lòng nhập tên sản phẩm')"
+                    oninput="setCustomValidity('')">
+                    <button type="submit">Thêm</button>
+                </form>
+            </main>
+            
+        </section>
+        <!-- --------------CONTENT ---------------->
+
+
+        
+
+        <script src="script.js"></script>
+</body>
+</html>

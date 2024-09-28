@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Web Bán Điện Thoại</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+              integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/style.css" rel="stylesheet">
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function()
+            {
+                $('#toggle').click(function(){
+                    $('nav').slideToggle();
+                });
+            })
+        </script>
+
+        <div id="toggle">
+            <div id="logo-shop" ><a  href="index.html"><i class="fa-solid fa-shop"></i>ABC STORE</a></div>
+            <div style="color: white;"><i class="fa-solid fa-bars"></i></div>
+            <hr>
+        </div>
+        <a name="trangchu"></a>
+        <nav>
+           <div class="container">
+                <ul id="main-menu">
+                    <li id="NameShop"><a href="index.html"><i class="fa-solid fa-shop"></i>ABC Shop</a></li>
+                    <li id="input-search"><input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li class="item-li"><a href=""><button><i class="fa-solid fa-file"></i>Policy</button></a></li>
+                    <li class="item-li"><a href="cart.html"><button><i class="fa-solid fa-cart-shopping"></i>Cart</button></a></li>
+                    <li class="item-li"><a href="location.html"><button><i class="fa-solid fa-location-dot"></i>Location</button></a></li>
+                    <li class="item-li"><a href=""><button><i class="fa-solid fa-list"></i>PO</button></a></li>
+                    <li id="user-form" class="item-li"><a href="#"></a><button><i class="fa-solid fa-user"></i>User</button></li>
+                        <div class="user-form">
+                            <div class="user-form-content">
+                                <h2>
+                                    <i class="fa-solid fa-shop"></i>ABC Store
+                                    <span id="userclose"><i class="fa-solid fa-xmark"></i>Đóng</span>
+                                </h2>
+                                <form action="">     
+                                    <input type="text" class="input-content" placeholder="Email hoặc số điện thoại">
+                                    <input type="password" class="input-content" placeholder="Mật khẩu">
+                                    <div class="login-form">
+                                        <button class="login-btn">Đăng nhập</button>
+                                    </div>
+                                    <div class="question">
+                                        <a href="">Quên mật khẩu?</a>
+                                    </div>
+                                    <div class="register-form-btn" style="width: 340px;height: 50px;">
+                                        <a href="register.html">Tạo tài khoản mới</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                </ul>
+           </div>
+        </nav>
+
+       <!-------------Advertisement----------->
+        <section class="Advertisement"> <!------Slider-------->
+            <div class="container">
+                <div class="Flyer-content"> <!---slider-content-->
+                    <div class="Flyer-content-left"> <!--------silder-content-left-->
+                        <div class="Flyer-content-left-top"> <!---silder-content-left-top-container--->
+                            <div class="Flyer-left-top"><!----slider-content-left-top---->
+                                <a href=""><img src="img/Flyer1.jpg" alt=""></a>
+                                <a href=""><img src="img/Flyer3.jpg" alt=""></a>
+                                <a href=""><img src="img/Flyer2.jpg" alt=""></a>
+                                <a href=""><img src="img/Flyer4.jpg" alt=""></a>
+                            </div>
+                            <div class="Flyer-btn">
+                                <button type="button" role="presentation" class="btn-pre">
+                                    <span aria-label="Previous"> < </span>
+                                </button>
+                                <button type="button" role="presentation" class="btn-next">
+                                    <span aria-label="Next"> > </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="Flyer-left-bottom"> <!----slider-content-left-bottom------>
+                            <li class="active">Xiaomi 14 Pro Max</li>
+                            <li>Iphone 15 Pro</li>
+                            <li>Redmi Note 13</li>
+                            <li>SamSung Galaxy S24</li>
+                        </div>
+                    </div>  
+                    <div class="Flyer-content-right">
+                        <li><a href=""><img src="img/Flyer7.png" alt=""></a></li>
+                        <li><a href=""><img src="img/Flyer8.png" alt=""></a></li>
+                    </div>               
+                </div>
+            </div>
+        </section>
+    <!---Menu-bar-->
+        <section class="menu-bar">
+                <div class="container">
+                    <div class="menu-bar-content">
+                        <ul>
+                            <li><i class="fa-solid fa-mobile"></i>Điện Thoại
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="#Iphone">IPhone</a></li>
+                                        <li><a href="#Samsung">SAMSUNG</a></li>
+                                        <li><a href="#Xiaomi">XIAOMI</a></li>
+                                        <li><a href="#Vivo">VIVO</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><i class="fa-solid fa-headphones"></i>Phụ Kiện
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="#Bluetooth">Tai Nghe Bluetooth</a></li>
+                                        <li><a href="#TaiNgheDay">Tai Nghe Dây</a></li>
+                                        <li><a href="#SacDuPhong">Sạc Dự Phòng</a></li>       
+                                        <li><a href="#OpLung">Ốp Lưng</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        
+        <!-- --------Điện Thoại---------- -->
+        <section class="slide-product-one">
+                <div class="container">
+                    <div class="product-one-content">
+                        <div class="product-one-content-title">
+                            <a name="Iphone"></a>
+                            <span style="margin-left: 10px;color: #f5f5f5;font-size: 25px;"><i class="fa-brands fa-apple"></i>IPhone (Apple)</span>
+                            <hr>
+                        </div>
+                        <div class="product-one-content-items">
+                            <div class="product-one-item">
+                                <a name="Samsung"></a>
+                                <img src="imgIPhone/iPhone_15_Pro_Max.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-text-style" "><i class="fa-solid fa-fire"></i>Hot</li>
+                                    <li>IPhone 15 Pro Max</li>
+                                    <li>Giá: 34.990.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgIPhone/IPhone_13.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_hotsale.jpg"><p>Hot Sale</p>
+                                    </li>
+                                    <li>IPhone 13</li>
+                                    <li class="item-price-style"><a>Giá: 17.790.000<sup>đ</sup></a> <span>-23%</span></li>
+                                    <li>Giá: 13.690.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgIPhone/Iphone_14_Pro_Max.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_contract.jpg"><p>Quà tặng</p>
+                                    </li>
+                                    <li>IPhone 14 Pro Max</li>
+                                    <li>Giá: 26.690.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgIPhone/IPhone_12.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_newprice.jpg"><p>Giá Mới</p>
+                                    </li>
+                                    <li>IPhone 12</li>
+                                    <li class="item-price-style"><a>Giá: 13.090.000<sup>đ</sup></a></li>
+                                    <li>Giá: 11.590.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-one-content">
+                        <div class="product-one-content-title">
+                            <span style="margin-left: 10px;color: #f5f5f5;font-size: 25px;"></i>SAMSUNG</span>
+                            <hr>
+                        </div>
+                        <div class="product-one-content-items">
+                            <div class="product-one-item">
+                                <a name="Xiaomi"></a>
+                                <img src="imgSAMSUNG/Samsung_Galaxy_S23_Ultra_5G.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_contract.jpg"><p>Quà tặng</p>
+                                    </li>
+                                    <li>SamSung Galaxy S23 Ultra 5G</li>
+                                    <li>Giá: 24.999.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgSAMSUNG/samsungGalaxy_M34_5G_8GB_128GB.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_hotsale.jpg"><p>Hot Sale</p>
+                                    </li>
+                                    <li>SamSung Galaxy M34 5G</li>
+                                    <li class="item-price-style"><a>Giá: 7.990.000<sup>đ</sup></a> <span>-27%</span></li>
+                                    <li>Giá: 5.790.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgSAMSUNG/Samsung_Galaxy_A55_5G.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_contract.jpg"><p>Quà tặng</p>
+                                    </li>
+                                    <li>SamSung Galaxy A55 5G</li>
+                                    <li>Giá: 11.490.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgSAMSUNG/Samsung_Galaxy_M54_5G.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-text-style" "><i class="fa-solid fa-fire"></i>Hot</li>
+                                    <li>SamSung Galaxy M54 5G</li>
+                                    <li>Giá: 8.990.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-one-content">
+                        <div class="product-one-content-title">
+    
+                             <span style="margin-left: 10px;color: #f5f5f5;font-size: 25px;"></i>XIAOMI</span>
+                        
+                            <hr>
+                        </div>
+                        <div class="product-one-content-items">
+                            <div class="product-one-item">
+                                <a name="Vivo"></a>
+                                <img src="imgXIAOMI/Xiaomi_14_Ultra.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-text-style">Đặt hàng</li>
+                                    <li>Xiaomi 14 Ultra</li>
+                                    <li>Giá: 32.990.000<sup>đ</sup></li>
+                                    <li>Hàng Sắp Về</li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgXIAOMI/Xiaomi_13T_pro_5G.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_newprice.jpg"><p>Giá Mới</p>
+                                    </li>
+                                    <li>Xiaomi 13T Pro 5G</li>
+                                    <li class="item-price-style"><a>Giá: 17.990.000<sup>đ</sup></a> <span>-8%</span></li>
+                                    <li>Giá: 13.790.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgXIAOMI/Xiaomi_14_5G.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-text-style"><i class="fa-solid fa-fire"></i>Hot</li>
+                                    <li>Xiaomi 14 5G</li>
+                                    <li>Giá: 21.490.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgXIAOMI/Xiaomi_Redmi_A3.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_hotsale.jpg"><p>Hot Sale</p>
+                                    </li>
+                                    <li>Xiaomi A3 </li>
+                                    <li class="item-price-style"><a>Giá: 2.790.000<sup>đ</sup></a> <span>-12%</span></li>
+                                    <li>Giá: 2.455.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-one-content">
+                        <div class="product-one-content-title">
+                            <span style="margin-left: 10px;color: #f5f5f5;font-size: 25px;"></i>VIVO</span>                   
+                            <hr>
+                        </div>
+                        <div class="product-one-content-items">
+                            <div class="product-one-item">
+                                <a name="Bluetooth"></a>
+                                <img src="imgVIVO/vivo_Y36.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_contract.jpg"><p>Quà tặng</p>
+                                    </li>
+                                    <li>ViVo Y36</li>
+                                    <li>Giá:5.040.000<sup>đ</sup></li>                           
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgVIVO/vivo_V29e_5G_12GB.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-text-style"><i class="fa-solid fa-fire"></i>Hot</li>
+                                    <li>ViVo V29e 5G 12GB</li>                           
+                                    <li>Giá: 9.990.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgVIVO/vivo_Y100.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_contract.jpg"><p>Quà tặng</p>
+                                    </li>
+                                    <li>ViVo Y100</li>
+                                    <li>Giá: 7.690.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="product-one-item">
+                                <img src="imgVIVO/vivo_Y18.jpg" alt="">
+                                <div class="product-one-text">
+                                    <li class="item-img-style">
+                                        <img src="img/icon_hotsale.jpg"><p>Hot Sale</p>
+                                    </li>
+                                    <li>ViVo Y18</li>
+                                    <li class="item-price-style"><a>Giá: 4.490.000<sup>đ</sup></a> <span>-12%</span></li>
+                                    <li>Giá: 4.290.000<sup>đ</sup></li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+        <!--------- Phụ Kiện -------------->
+        <section class="slide-product-two">
+            <div class="container">
+                <!------- Tai Nghe Bluetooth---------->
+                <div class="product-two-content">
+                    <div class="product-two-content-title">
+                        <span style="margin-left: 10px;color: black; font-size: 25px;">Tai Nghe Bluetooth</span>
+                        <hr>
+                    </div>
+                    <div class="product-two-content-items">
+                        <!-- Sản phẩm 1 -->
+                        <div class="product-two-item">
+                            <img src="img/bluetooth1.jpg" alt="">
+                            <div class="product-two-text">
+                                <a name="TaiNgheDay"></a>
+                                <li class="item-img-style">
+                                    <img src="img/icon_cheap.jpg"><p>Giá Rẻ Quá</p>
+                                </li>
+                                <li>Tai nghe Bluetooth True Wireless Xiaomi Redmi Buds 5</li>
+                                <li class="item-price-style"><a>Giá:1.090.000<sup>đ</sup></a> <span>-9%</span></li>
+                                <li>Giá: 990.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 2 -->
+                        <div class="product-two-item">
+                            <img src="img/bluetooth2.jpg" alt="">
+                            <div class="product-two-text">
+                                <li class="item-img-style">
+                                    <img src="img/icon_cheap.jpg"><p>Giá Rẻ Quá</p>
+                                </li>
+                                <li>Tai nghe Bluetooth True Wireless Baseus Bowie E13</li>
+                                <li class="item-price-style"><a>Giá:590.000<sup>đ</sup></a> <span>-42%</span></li>
+                                <li>Giá: 340.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>               
+                                </li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 3 -->
+                        <div class="product-two-item">
+                            <img src="img/bluetooth3.jpg" alt="">
+                            <div class="product-two-text">
+                                <li class="item-img-style">
+                                    <img src="img/icon_cheap.jpg"><p>Giá Rẻ Quá</p>
+                                </li>
+                                <li>Tai nghe Bluetooth True Wireless AVA+ Go F25</li>
+                                <li class="item-price-style"><a>Giá:290.000<sup>đ</sup></a> <span>-19%</span></li>
+                                <li>Giá: 230.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>               
+                                </li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 4 -->
+                        <div class="product-two-item">
+                            <img src="img/bluetooth4.jpg" alt="">
+                            <div class="product-two-text">
+                                <li>Tai nghe Bluetooth Shokz OPENRUN S803</li>                             
+                                <li>Giá: 3.490.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i>               
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--------- Tai Nghe Có Dây---------->
+                <div class="product-two-content">
+                    <div class="product-two-content-title">    
+                        <span style="margin-left: 10px;color: black; font-size: 25px;">Tai Nghe Dây</span>
+                        <hr>
+                    </div>
+                    <div class="product-two-content-items">
+                        <!-- Sản phẩm 1 -->
+                        <div class="product-two-item">
+                            <img src="img/TaiNgheDay1.jpg" alt="">
+                            <div class="product-two-text">
+                                <a name="SacDuPhong"></a>
+                                <li>Tai nghe Có Dây Apple MTJY3</li>   
+                                <li>Giá: 550.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 2 -->
+                        <div class="product-two-item">
+                            <img src="img/TaiNgheDay2.jpg" alt="">
+                            <div class="product-two-text">
+                                <li class="item-img-style">
+                                    <img src="img/icon_cheap.jpg"><p>Giá Rẻ Quá</p>
+                                </li>
+                                <li>Tai nghe Có Dây AVA+ LiveBass Y232</li>
+                                <li class="item-price-style"><a>Giá:200.000<sup>đ</sup></a> <span>-32%</span></li>
+                                <li>Giá: 135.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>               
+                                </li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 3 -->
+                        <div class="product-two-item">
+                            <img src="img/TaiNgheDay3.jpg" alt="">
+                            <div class="product-two-text">
+                                <li class="item-img-style">
+                                    <img src="img/icon_cheap.jpg"><p>Giá Rẻ Quá</p>
+                                </li>
+                                <li>Tai nghe Có Dây SamSung IA500</li>
+                                <li class="item-price-style"><a>Giá:300.000<sup>đ</sup></a> <span>-16%</span></li>
+                                <li>Giá: 250.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>               
+                                </li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 4 -->
+                        <div class="product-two-item">
+                            <img src="img/TaiNgheDay4.jpg" alt="">
+                            <div class="product-two-text">
+                                <li class="item-img-style">
+                                    <img src="img/icon_cheap.jpg"><p>Giá Rẻ Quá</p>
+                                </li>
+                                <li>Tai nghe Có Dây JBL C200 SIU</li>   
+                                <li class="item-price-style"><a>Giá: 290.000<sup>đ</sup></a> <span>-24%</span></li>                         
+                                <li>Giá: 220.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i>               
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--------- Sạc Dự Phòng ----------->
+                <div class="product-two-content">
+                    <div class="product-two-content-title">
+                        <span style="margin-left: 10px;color: black; font-size: 25px;">Sạc Dự Phòng</span>
+                        <hr>
+                    </div>
+                    <div class="product-two-content-items">
+                        <!-- Sản phẩm 1 -->
+                        <div class="product-two-item">
+                            <img src="img/SacDuPhong1.jpg" alt="">
+                            <div class="product-two-text">
+                                <li class="item-img-style">
+                                    <img src="img/icon_cheap.jpg"><p>Giá Rẻ Quá</p>
+                                </li>
+                                <a name="OpLung"></a>
+                                <li>Baseus ioTa 220V/140W BPE14A</li>
+                                <li class="item-price-style"><a>Giá:7.990.000<sup>đ</sup></a> <span>-50%</span></li>
+                                <li>Giá: 3.995.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 2 -->
+                        <div class="product-two-item">
+                            <img src="img/SacDuPhong2.jpg" alt="">
+                            <div class="product-two-text">
+                                <li class="item-img-style">
+                                    <img src="img/icon_cheap.jpg"><p>Giá Rẻ Quá</p>
+                                </li>
+                                <li>AVA+ 12W JP299</li>
+                                <li class="item-price-style"><a>Giá:380.000<sup>đ</sup></a> <span>-50%</span></li>
+                                <li>Giá: 190.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>               
+                                </li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 3 -->
+                        <div class="product-two-item">
+                            <img src="img/SacDuPhong3.jpg" alt="">
+                            <div class="product-two-text">
+                                <li class="item-img-style">
+                                    <img src="img/icon_cheap.jpg"><p>Giá Rẻ Quá</p>
+                                </li>
+                                <li>Anker MagGo 20W A1641</li>
+                                <li class="item-price-style"><a>Giá:1.750.000<sup>đ</sup></a> <span>-40%</span></li>
+                                <li>Giá: 1.050.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>               
+                                </li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 4 -->
+                        <div class="product-two-item">
+                            <img src="img/SacDuPhong4.jpg" alt="">
+                            <div class="product-two-text">
+                                <li class="item-img-style">
+                                    <img src="img/icon_cheap.jpg"><p>Giá Rẻ Quá</p>
+                                </li>
+                                <li>Mazer Super Mini 22.5W V2</li>   
+                                <li class="item-price-style"><a>Giá: 940.000<sup>đ</sup></a> <span>-45%</span></li>                         
+                                <li>Giá: 515.000<sup>đ</sup></li>
+                                <li>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i>               
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--------Ốp Lưng-------->
+                <div class="product-two-content">
+                    <div class="product-two-content-title">
+                        <span style="margin-left: 10px;color: black; font-size: 25px;">Ốp Lưng</span>
+                        <hr>
+                    </div>
+                    <div class="product-two-content-items">
+                        <!-- Sản phẩm 1 -->
+                        <div class="product-two-item">
+                            <img src="img/OpLung1.jpg" alt="">
+                            <div class="product-two-text">
+                                <li>Ốp Lưng iPhone 15 Pro Nhựa cứng JM Bayer II</li>
+                                <li class="item-price-style"><a>Giá:300.000<sup>đ</sup></a> <span>-50%</span></li>
+                                <li>Giá: 150.000<sup>đ</sup></li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 2 -->
+                        <div class="product-two-item">
+                            <img src="img/OpLung2.jpg" alt="">
+                            <div class="product-two-text">
+                                <li>Ốp Lưng iPhone13 Nhựa cứng viền dẻo Jincase</li>
+                                <li class="item-price-style"><a>Giá:300.000<sup>đ</sup></a> <span>-50%</span></li>
+                                <li>Giá: 150.000<sup>đ</sup></li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 3 -->
+                        <div class="product-two-item">
+                            <img src="img/OpLung3.jpg" alt="">
+                            <div class="product-two-text">
+                                <li>Ốp Lưng Galaxy A55 Silicone Samsung</li>
+                                <li class="item-price-style"><a>Giá:550.000<sup>đ</sup></a> <span>-15%</span></li>
+                                <li>Giá: 467.000<sup>đ</sup></li>
+                            </div>
+                        </div>
+                        <!-- Sản phẩm 4 -->
+                        <div class="product-two-item">
+                            <img src="img/OpLung4.jpg" alt="">
+                            <div class="product-two-text">
+                                <li>Ốp Lưng Xiaomi 12C Nhựa dẻo TPU</li>   
+                                <li class="item-price-style"><a>Giá: 100.000<sup>đ</sup></a> <span>-50%</span></li>                         
+                                <li>Giá: 50.000<sup>đ</sup></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>        
+            <section class="footer-content">
+                    <div class="footer-icon">
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li><i class="fa-brands fa-google-plus"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                    </div>
+                    <div class="footer-text">
+                        <div class="text-one">
+                            <ul>
+                                <li><a href="#trangchu">Trang Chủ</a></li>
+                                <li>Lịch sử mua hàng</li>
+                                <li>Chính sách bảo hành</li>
+                            </ul>
+                        </div>
+                        <div class="text-two">
+                           <ul>
+                                <li>Giới thiệu  công ty</li>
+                                <li>Tuyển dụng</li>
+                                <li>Gửi góp ý, khiếu nại</li>
+                           </ul>
+                        </div>
+                        <div class="text-three">
+                            <li>Gọi mua: 1900 232 460</li>
+                            <li>Khiếu nại: 1800.1062</li>
+                            <li>Bảo hành: 1900 232 464</li>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 20px; font-size: 15px; background-color: #f5f5f5; color: black;">
+                        <span>Designed by: Nguyễn Ngọc Thiện - MSSV: DH52107203</span>
+                    </div>
+
+            </section>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
